@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+{% block content %}
+<br/>
+<br/>
+<br/>
+<h4 align="center"><strong>{{ title }}</strong></h4>
+
+    <div class="content-section">
+        <div align="center" class="form-style-6">
+        <form method="POST" action="">
+            {{ form.hidden_tag() }}
+            <fieldset class="form-group">
+                <div class="form-group">
+                    {% if form.email_address.errors %}
+                        {{ form.email_address(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.email_address.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.email_address(class="form-control form-control-lg full-width", style="color:grey", placeholder="Email Address:") }}
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {% if form.password.errors %}
+                        {{ form.password(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.password.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.password(class="form-control form-control-lg full-width", placeholder="Password:") }}
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {% if form.confirm_password.errors %}
+                        {{ form.confirm_password(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.confirm_password.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.confirm_password(class="form-control form-control-lg full-width", placeholder="Confirm Password:") }}
+                    {% endif %}
+                </div>
+            </fieldset>
+            <div class="form-group">
+                {{ form.submit(class="btn btn-outline-info full-width", style="color:grey;font-family: Verdana;background:white;border-color:black") }}
+            </div>
+        </form>
+        </div></div>
+ <div class="border-top pt-3">
+        <small class="text-muted">
+            Have An Account? <a class="ml-2" href="{{ url_for('login') }}" style="color:teal"><strong>Login</strong></a>
+        </small>
+    </div>
+{% endblock content %}

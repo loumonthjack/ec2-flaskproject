@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block content %}
+<br/>
+<br/>
+<br/>
+<br/>
+<article class="card">
+      <br/>
+      <h2 align="center"><strong>{{ title }}</strong></h3>
+      <br/>
+      <div align="center" style="font-size:18px">
+        <p><strong>Account Number:</strong></p> <p>{{ bankAccount.account_number }}</p>
+        <p><strong>Routing Number:</strong></p><p> {{ bankAccount.routing_number }}</p>
+        <p><strong>Account Owner:</strong></p><p> {{ user.email_address }}</p>
+      </div>
+      <br/>
+    <div align='center'>
+        <form action="{{ url_for('home')}}">
+            <input align="left" class="btn btn-success" type="submit" value="Home">
+        </form>
+    </div>
+    <br/>
+    <br/>
+  </article>
+<br/>
+<br/>
+
+{% endblock content %}
