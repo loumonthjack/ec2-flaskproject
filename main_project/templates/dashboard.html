@@ -2,7 +2,9 @@
 {% block content %}
 <br/>
 <br/>
-<br/>
+<p>
+  Current User: {{ current_user.email_address }}
+</p>
 <div class="table-responsive">
   <table>
       <thead>
@@ -22,10 +24,12 @@
   </table>
 </div>
 <div align="center">
+  <a class="btn btn-secondary btn-sm mt-1 mb-1" href="{{ url_for('searchAccount', user_id = current_user.id) }}">Search Account</a>
+</div>
+<br/>
+<div align="center">
   <a class="btn btn-secondary btn-sm mt-1 mb-1" href="{{ url_for('addbank') }}">Add Bank Info</a>
 </div>
-
-<br/>
 <div hidden>
     {% for page_num in users.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
       {% if page_num %}
