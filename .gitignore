@@ -1,0 +1,7 @@
+vendor
+Aws
+.env
+.pyc
+__pycache__
+.db
+main_project/__pycache__/routes.cpython-37.pyc

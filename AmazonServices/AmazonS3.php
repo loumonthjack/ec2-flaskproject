@@ -87,7 +87,7 @@ class AmazonS3
                 $client = new S3Client($options);
                 
                 // Local Directory -- Transfer From
-                $fileDestination = '/home/loumonth/Flask-App';
+                $fileDestination = '/home/loumonth/Tasks';
 
                 // Upload Action
                 $client->uploadDirectory($fileDestination, $bucketFolder);

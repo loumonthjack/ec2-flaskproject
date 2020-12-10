@@ -1,7 +1,7 @@
 <?php
 include_once 'Credentials.php';
-//require 'AmazonS3.php';
-require 'AmazonSNS.php';
+require 'AmazonS3.php';
+//require 'AmazonSNS.php';
 //require 'AmazonCloudWatch.php';
 
 // AWS Credentials
@@ -23,16 +23,16 @@ $options = Credentials::Amazon();
 // ------------------SIMPLE STORAGE SERVICE-------------------//
 // Public Bucket = cloud-unit-2
 // Private Buckets = cloud-unit-1/3/4
-//$bucket = ['cloud-unit-1', 'cloud-unit-2', 'cloud-unit-3', 'cloud-unit-4'];
+$bucket = ['cloud-unit-1', 'cloud-unit-2', 'cloud-unit-3', 'cloud-unit-4'];
 //$list = AmazonS3::listSpecificFiles($options, $bucket[1], 'jpg');
 // Empty AWS S3 Bucket
-//$empty = AmazonS3::deleteS3Files($options, $bucket[3]);
+//$empty = AmazonS3::deleteS3Files($options, $bucket[2]);
 
 // Download Files From S3 Bucket
 //$download = AmazonS3::downloadS3Files($options, $bucket[2]);
 
 // Upload Files From S3 Bucket
-//$upload = AmazonS3::uploadS3Files($options, $bucket[0]);
+//$upload = AmazonS3::uploadS3Files($options, $bucket[2]);
 // -------------------SIMPLE STORAGE SERVICE------------------//
 
 
@@ -46,6 +46,6 @@ if(PHP_SAPI === 'cli'){
     };
     $message = $argv[1];
 }
-$sendMessage = \AmazonSNS::sendMessage($options, $message);
+//$sendMessage = \AmazonSNS::sendMessage($options, $message);
 // -----------------SIMPLE NOTIFICATION SERVICE---------------//
 
