@@ -1,0 +1,69 @@
+{% extends "Layout.html" %}
+{% block content %}
+<section id="home" >
+  <div class="home-content"> 
+  <h1 align="center" style="color:#409bd0;">
+    {{ title }}
+  </h1> 
+  
+  <p align="center">
+    <code>
+      {{ legend }} User: {{ current_user.email_address }}</code>
+  </p>
+  
+  
+ 
+    
+    <table style="width:100%" align="center">
+      <tr align="center">
+        <th align="center">Tenants</th>
+      </tr>
+      {% for users in users.items%}
+      <tr align="center">  {% if users.email_address == current_user.email_address %}
+        <a href="mailto:{{ users.email_address }}"><td style="color:darkred" hidden>{{ users.email_address }}</td></a>
+        {% else %}<a href="mailto:{{ users.email_address }}"><td style="color:#409bd0">{{ users.email_address }}</td></a>
+        {% endif %}
+      </tr>
+      {% endfor %}  
+    </table>
+  
+  <br/><br/>
+  <article class="card">
+  
+    <div class="service-content" align="center">	
+      <h3>Messages</h3>  
+      
+  </div>
+  
+    <iframe src="https://www.jotform.com/grid/210058910676052" frameborder="0" style="width: 100%; height: 100%; min-height: 500px; border:none;" scrolling="auto"></iframe>
+</article>
+<br/><br/>
+<article class="card">
+  
+  <div class="service-content" align="center">	
+    <h3>Card Payments</h3>  
+    
+  </div>
+
+  <iframe src="https://www.jotform.com/grid/210058589641056" frameborder="0" style="width: 100%; height: 100%; min-height: 500px; border:none;" scrolling="auto"></iframe>
+</article>
+<br/><br/>
+<article class="card">
+  <div class="service-content" align="center">	
+    <h3>Account Payments</h3>  
+    
+  </div>
+  <iframe src="https://www.jotform.com/grid/210058836506051" frameborder="0" style="width: 100%; height: 100%; min-height: 500px; border:none;" scrolling="auto"></iframe>
+
+</article>
+<br/><br/>
+<article class="card">
+  <div class="service-content" align="center">	
+    <h3>Automated Payments</h3>  
+    
+  </div>
+  <iframe src="https://www.jotform.com/grid/210059157454050" frameborder="0" style="width: 100%; height: 100%; min-height: 500px; border:none;" scrolling="auto"></iframe>
+</article>
+</div>
+</section>
+{% endblock content %}

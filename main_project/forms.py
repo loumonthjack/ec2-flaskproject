@@ -12,7 +12,7 @@ class RegistrationForm(FlaskForm):
     password = PasswordField('Password', validators=[DataRequired()])
     confirm_password = PasswordField('Confirm Password',
                                      validators=[DataRequired(), EqualTo('password')])
-    submit = SubmitField('Sign Up')
+    submit = SubmitField('Onboard')
 
     @staticmethod
     def validate_email(self, email_address):
@@ -36,8 +36,7 @@ class BankAccountForm(FlaskForm):
     confirm_account_number = IntegerField('Confirm Account Number', validators=[DataRequired(), EqualTo('account_number')])
     routing_number = IntegerField('Routing Number', validators=[DataRequired()])
     submit = SubmitField('Add Bank Account')
-
-
+    
     @staticmethod
     def validate_account(self, account_number):
         bank_account_number = BankAccount.query.filter_by(account_number=account_number.data).first()

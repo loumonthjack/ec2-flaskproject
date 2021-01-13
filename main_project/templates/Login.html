@@ -1,8 +1,10 @@
-{% extends "layout.html" %}
+{% extends "Layout.html" %}
 {% block content %}
-<h4 align="center"><strong>{{ title }}</strong></h4>
-    <div class="content-section">
-        <div align="center" class="form-style-6">
+<section id="home" >
+    
+    <h1 class="intro-header">
+      {{ title }}
+    </h1> 
         <form method="POST" action="">
             {{ form.hidden_tag() }}
             <fieldset class="form-group">
@@ -30,7 +32,7 @@
                         {{ form.password(class="form-control form-control-lg full-width", placeholder="Password") }}
                     {% endif %}
                 </div>
-                <div class="form-check">
+                <div class="form-check" align="center">
                     {{ form.remember(class="form-check-input") }}
                     {{ form.remember.label(class="form-check-label") }}
                 </div>
@@ -39,11 +41,5 @@
                 {{ form.submit(class="btn btn-outline-info full-width", style="color:grey;font-family: Verdana;background:white;border-color:black") }}
             </div>
         </form>
-        </div>
-    </div>
-    <div class="border-top pt-3">
-        <small class="text-muted">
-            Need An Account? <a class="ml-2" href="{{ url_for('register') }}" style="color:teal"><strong>Register Now</strong></a>
-        </small>
-    </div>
+       </section>
 {% endblock content %}

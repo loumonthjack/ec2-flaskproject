@@ -1,0 +1,84 @@
+{% extends "Layout.html" %}
+{% block content %}
+<section id="home" >
+  <div class="home-content"> 
+            
+  <h1 class="intro-header">{{ title }}</h1>           
+      <p align="center">
+        <code>
+          {{ legend }} User: {{ current_user.email_address }}</code>
+      </p>
+            <div class="about-how-content" >
+                <div class="about-how-steps block-1-2 block-tab-full group">
+
+                  <div class="bgrid step" data-item="1">
+                        <a href="{{ url_for('send_message') }}"><h3>Send Message</h3>
+                        <p>Send a Message to your Landlord, Attach a file, image, or video to the message.
+                        </p> 
+                        </a>
+                    </div>
+
+                    <div class="bgrid step" data-item="2">
+                      <a href="{{ url_for('card_payment') }}"><h3>Pay with Card</h3>
+                      <p>One Time Payment with Credit/Debit Card, This payment method has a <strong>9% transaction fee.</strong></p>
+                      </a>
+                    </div>               
+               
+                    <div class="bgrid step" data-item="3">
+                      <a href="{{ url_for('bank_payment') }}"><h3>Pay with Bank</h3>
+                      <p>One Time Payment with Bank Account Information, This payment method has a <strong>0.8% transaction fee.</strong></p>
+                    </a></div>
+
+                    <div class="bgrid step" data-item="4">
+                        <a href="{{ url_for('setup_payment') }}"><h3>Set up Auto-Payments</h3> 
+                        <p>Set Up Monthly Payment with Bank Account Information, This payment method <strong>does not have a transaction fee.</strong></p>
+                      </a>
+                    </div>  
+
+                </div>           
+           </div> <!-- end about-how-content -->
+<!--<div class="row">
+  <div class="col-lg-6 mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h4 class="card-title" align="center">
+          <a href="{{ url_for('send_message') }}"  >Message Landlord</a>
+        </h4>
+        <p class="card-text">Send a Message to your Landlord, Attach a file, image, or video to the message.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6 mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h4 class="card-title" align="center">
+          <a href="{{ url_for('card_payment') }}"  >Card Payment</a>
+        </h4>
+        <p class="card-text">One Time Payment with Credit/Debit Card, This payment method has a <strong>9% transaction fee.</strong></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6 mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h4 class="card-title" align="center">
+          <a href="{{ url_for('bank_payment') }}"  >Bank Account Payment</a>
+        </h4>
+        <p class="card-text">One Time Payment with Bank Account Information, This payment method has a <strong>0.8% transaction fee.</strong></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6 mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h4 class="card-title" align="center">
+          <a href="{{ url_for('setup_payment') }}"  >Automate Payments</a>
+        </h4>
+        <p class="card-text">Set Up Monthly Payment with Bank Account Information, This payment method <strong>does not have a transaction fee.</strong></p>
+      </div>
+    </div>
+  </div>
+</div> --></div></section>
+<br/>
+
+{% endblock content %}

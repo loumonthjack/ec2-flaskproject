@@ -1,0 +1,226 @@
+{% extends "Layout.html" %}
+{% block content %}
+<section id="home" >
+  <div class="home-content"> 
+            
+  <h1 class="intro-header">{{ title }}</h1>           
+      <p align="center">
+        <code>
+          {{ legend }} User: {{ current_user.email_address }}</code>
+      </p>
+<form class="jotform-form" action="https://submit.jotform.com/submit/210006749504045/" method="post" name="form_210006749504045" id="210006749504045" accept-charset="utf-8" autocomplete="on">
+  <input type="hidden" name="formID" value="210006749504045" />
+  <input type="hidden" id="JWTContainer" value="" />
+  
+  <input type="hidden" id="cardinalOrderNumber" value="" />
+  <div role="main" class="form-all">
+    <ul class="form-section page-section">
+      <li class="form-line jf-required" data-type="control_email" id="id_8">
+        <label class="form-label form-label-left form-label-auto" id="label_8" for="input_8">
+          Email
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_8" class="form-input jf-required">
+          <span class="form-sub-label-container" style="vertical-align:top">
+            <input type="email" id="input_8" name="q8_email" class="form-textbox validate[required, Email]" size="30" value="" data-component="email" aria-labelledby="label_8 sublabel_input_8" required="" />
+            <label class="form-sub-label" for="input_8" id="sublabel_input_8" style="min-height:13px" aria-hidden="false"> example@example.com </label>
+          </span>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_stripe" id="id_3" data-payment="true">
+        <label class="form-label form-label-top" id="label_3" for="input_3">
+          Credit/Debit Payment
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_3" class="form-input-wide jf-required">
+          <div data-wrapper-react="true" class="stripe-payment-wrapper" data-stripe-currency="USD">
+            <div data-wrapper-react="true">
+              <div class="filter-container">
+              </div>
+              <input type="hidden" name="simple_fpc" data-payment_type="stripe" data-component="payment1" value="3" />
+              <input type="hidden" name="payment_total_checksum" id="payment_total_checksum" data-component="payment2" />
+              <div id="image-overlay" class="overlay-content" style="display:none">
+                <img id="current-image" />
+                <span class="lb-prev-button">
+                  prev
+                </span>
+                <span class="lb-next-button">
+                  next
+                </span>
+                <span class="lb-close-button">
+                  ( X )
+                </span>
+                <span class="image-overlay-product-container">
+                  <ul class="form-overlay-item" hasicon="false" hasimages="false" iconvalue="">
+                  </ul>
+                </span>
+              </div>
+              <div data-wrapper-react="true">
+                <span class="form-product-item hover-product-item  full_img new_ui" categories="non-categorized" pid="1000">
+                  <div data-wrapper-react="true" class="form-product-item-detail new_ui">
+                    <div class="p_col">
+                      <div class="p_checkbox">
+                        <input type="checkbox" class="form-checkbox validate[required]  form-product-input" id="input_3_1000" name="q3_creditdebitPayment[][id]" value="1000" checked="" disabled="" />
+                        <div class="checked">
+                        </div>
+                        <div class="select_border">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p_image">
+                      <div class="image_area null" style="background-image:url(&quot;null&quot;)">
+                        <div class="image_zoom">
+                        </div>
+                      </div>
+                    </div>
+                    <div for="input_3_1000" class="form-product-container">
+                      <span data-wrapper-react="true">
+                        <div class="title_description">
+                          <span class="form-product-name" id="product-name-input_3_1000">
+                            Housing Payment
+                          </span>
+                          <span class="form-product-description" id="product-name-description-input_3_1000">
+                          </span>
+                        </div>
+                        <span class="form-product-details">
+                          <b>
+                            <span data-wrapper-react="true">
+                              $
+                              <span id="input_3_1000_price">
+                                3,400.00
+                              </span>
+                            </span>
+                          </b>
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </span>
+                <div class="payment_footer new_ui ">
+                  <div class="total_area">
+                    <div class="form-payment-total">
+                      <div id="total-text">
+                        Total
+                      </div>
+                      <div class="form-payment-price">
+                        <span data-wrapper-react="true">
+                          $
+                          <span id="payment_total">
+                            3,400.00
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr/>
+            </div>
+            <div id="stripe-templates">
+              <div class="stripe-sca-template">
+                <div>
+                  <table class="payment-up-form-table" style="border:0;margin-bottom:10px" cellPadding="0" cellSpacing="0">
+                    <tbody>
+                      <tr>
+                        <td width="50%">
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="form-address-table payment-form-table" style="border:0" cellPadding="0" cellSpacing="0">
+                    <tbody>
+                      <tr>
+                        <th colSpan="2" style="text-align:left" id="ccTitle3">
+                          Credit Card Details
+                        </th>
+                      </tr>
+                      <tr>
+                        <td width="50%">
+                          <span class="form-sub-label-container" style="vertical-align:top">
+                            <input type="text" id="input_3_cc_firstName" name="q3_creditdebitPayment[cc_firstName]" class="form-textbox validate[required] cc_firstName" size="20" value="" data-component="cc_firstName" />
+                            <label class="form-sub-label" for="input_3_cc_firstName" id="sublabel_cc_firstName" style="min-height:13px;margin:0 0 3px 0" aria-hidden="false"> First Name </label>
+                          </span>
+                        </td>
+                        <td width="50%">
+                          <span class="form-sub-label-container" style="vertical-align:top">
+                            <input type="text" id="input_3_cc_lastName" name="q3_creditdebitPayment[cc_lastName]" class="form-textbox validate[required] cc_lastName" size="20" value="" data-component="cc_lastName" />
+                            <label class="form-sub-label" for="input_3_cc_lastName" id="sublabel_cc_lastName" style="min-height:13px;margin:0 0 3px 0" aria-hidden="false"> Last Name </label>
+                          </span>
+                        </td>
+                      </tr>
+                      <tr class="if_cc_field">
+                        <td width="50%">
+                          <span class="form-sub-label-container" style="vertical-align:top">
+                            <div class="form-textbox cc_numberMount ">
+                            </div>
+                            <label class="form-sub-label" for="input_3_cc_number" id="sublabel_cc_number" style="min-height:13px;margin:0 0 3px 0" aria-hidden="false"> Credit Card Number </label>
+                          </span>
+                        </td>
+                        <td width="50%">
+                          <span class="form-sub-label-container" style="vertical-align:top">
+                            <div class="form-textbox cc_ccvMount ">
+                            </div>
+                            <label class="form-sub-label" for="input_3_cc_ccv" id="sublabel_cc_ccv" style="min-height:13px;margin:0 0 3px 0" aria-hidden="false"> Security Code </label>
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td width="50%">
+                          <span class="form-sub-label-container" style="vertical-align:top">
+                            <div class="form-textbox cc_cardExpiryMount ">
+                            </div>
+                            <label class="form-sub-label" for="input_3_cc_card_expiry" id="sublabel_cc_card_expiry" style="min-height:13px;margin:0 0 3px 0" aria-hidden="false"> Card Expiration </label>
+                          </span>
+                        </td>
+                        <td width="50%">
+                          <tr style="display:none">
+                            <td>
+                              <input id="stripesca_dummy" style="display:none" />
+                            </td>
+                          </tr>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_button" id="id_6">
+        <div id="cid_6" class="form-input-wide">
+          <div style="text-align:center" data-align="center" class="form-buttons-wrapper form-buttons-center   jsTest-button-wrapperField">
+            <button id="input_6" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">
+              Submit
+            </button>
+          </div>
+        </div>
+      </li>
+      <li style="display:none">
+        Should be Empty:
+        <input type="text" name="website" value="" />
+      </li>
+    </ul>
+  </div>
+  <script>
+  JotForm.showJotFormPowered = "0";
+  </script>
+  <script>
+  JotForm.poweredByText = "Powered by JotForm";
+  </script>
+  <input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="210006749504045" />
+  <script type="text/javascript">
+  var all_spc = document.querySelectorAll("form[id='210006749504045'] .si" + "mple" + "_spc");
+for (var i = 0; i < all_spc.length; i++)
+{
+  all_spc[i].value = "210006749504045-210006749504045";
+}
+  </script>
+  <input type="hidden" id="input_7" name="q7_invoiceId" class="form-textbox form-hidden" value="# INV-PIN218" data-component="autoincrement" />
+</form></div></section>
+{% endblock content %}

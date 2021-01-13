@@ -1,0 +1,268 @@
+{% extends "Layout.html" %}
+{% block content %}
+<section id="home" >
+  <div class="home-content"> 
+            
+  <h1 class="intro-header">{{ title }}</h1>           
+      <p align="center">
+        <code>
+          {{ legend }} User: {{ current_user.email_address }}</code>
+      </p>
+<form class="jotform-form" action="https://submit.jotform.com/submit/210017703756046/" method="post" name="form_210017703756046" id="210017703756046" accept-charset="utf-8" autocomplete="on">
+  <input type="hidden" name="formID" value="210017703756046" />
+  <input type="hidden" id="JWTContainer" value="" />
+  <input type="hidden" id="cardinalOrderNumber" value="" />
+  <div role="main" class="form-all">
+    <ul class="form-section page-section">
+      <li class="form-line jf-required" data-type="control_fullname" id="id_2" data-compound-hint=",">
+        <label class="form-label form-label-left form-label-auto" id="label_2" for="first_2">
+          Name
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_2" class="form-input jf-required">
+          <div data-wrapper-react="true">
+            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first">
+              <input type="text" id="first_2" name="q2_name[first]" class="form-textbox validate[required]" size="10" value="" data-component="first" aria-labelledby="label_2 sublabel_2_first" required="" />
+              <label class="form-sub-label" for="first_2" id="sublabel_2_first" style="min-height:13px" aria-hidden="false"> First Name </label>
+            </span>
+            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="last">
+              <input type="text" id="last_2" name="q2_name[last]" class="form-textbox validate[required]" size="15" value="" data-component="last" aria-labelledby="label_2 sublabel_2_last" required="" />
+              <label class="form-sub-label" for="last_2" id="sublabel_2_last" style="min-height:13px" aria-hidden="false"> Last Name </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_email" id="id_5">
+        <label class="form-label form-label-left form-label-auto" id="label_5" for="input_5">
+          Email
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_5" class="form-input jf-required">
+          <span class="form-sub-label-container" style="vertical-align:top">
+            <input type="email" id="input_5" name="q5_email" class="form-textbox validate[required, Email]" size="30" value="" data-component="email" aria-labelledby="label_5 sublabel_input_5" required="" />
+            <label class="form-sub-label" for="input_5" id="sublabel_input_5" style="min-height:13px" aria-hidden="false"> example@example.com </label>
+          </span>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_stripeACHManual" id="id_1" data-payment="true">
+        <label class="form-label form-label-top" id="label_1" for="input_1">
+          Bank Account Payment
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_1" class="form-input-wide jf-required">
+          <div data-wrapper-react="true">
+            <div data-wrapper-react="true">
+              <div class="filter-container">
+              </div>
+              <input type="hidden" name="simple_fpc" data-payment_type="stripeACHManual" data-component="payment1" value="1" />
+              <input type="hidden" name="payment_total_checksum" id="payment_total_checksum" data-component="payment2" />
+              <div id="image-overlay" class="overlay-content" style="display:none">
+                <img id="current-image" />
+                <span class="lb-prev-button">
+                  prev
+                </span>
+                <span class="lb-next-button">
+                  next
+                </span>
+                <span class="lb-close-button">
+                  ( X )
+                </span>
+                <span class="image-overlay-product-container">
+                  <ul class="form-overlay-item" hasicon="false" hasimages="false" iconvalue="">
+                  </ul>
+                </span>
+              </div>
+              <div data-wrapper-react="true">
+                <span class="form-product-item hover-product-item  full_img new_ui" categories="non-categorized" pid="1000">
+                  <div data-wrapper-react="true" class="form-product-item-detail new_ui">
+                    <div class="p_col">
+                      <div class="p_checkbox">
+                        <input type="checkbox" class="form-checkbox validate[required]  form-product-input" id="input_1_1000" name="q1_bankAccount[][id]" value="1000" checked="" disabled="" />
+                        <div class="checked">
+                        </div>
+                        <div class="select_border">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p_image">
+                      <div class="image_area null" style="background-image:url(&quot;null&quot;)">
+                        <div class="image_zoom">
+                        </div>
+                      </div>
+                    </div>
+                    <div for="input_1_1000" class="form-product-container">
+                      <span data-wrapper-react="true">
+                        <div class="title_description">
+                          <span class="form-product-name" id="product-name-input_1_1000">
+                            Housing Payment
+                          </span>
+                          <span class="form-product-description" id="product-name-description-input_1_1000">
+                          </span>
+                        </div>
+                        <span class="form-product-details">
+                          <b>
+                            <span data-wrapper-react="true">
+                              $
+                              <span id="input_1_1000_price">
+                                3,400.00
+                              </span>
+                            </span>
+                          </b>
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </span>
+                <div class="payment_footer new_ui ">
+                  <div class="total_area">
+                    <div class="form-payment-total">
+                      <div id="total-text">
+                        Total
+                      </div>
+                      <div class="form-payment-price">
+                        <span data-wrapper-react="true">
+                          $
+                          <span id="payment_total">
+                            3,400.00
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr/>
+            </div>
+            <div>
+              <table class="form-address-table payment-form-deposits-table" style="border:0;display:none" cellPadding="0" cellSpacing="0">
+                <tbody>
+                  <tr>
+                    <th colSpan="2">
+                      Verify Your Account
+                    </th>
+                  </tr>
+                  <tr>
+                    <td colSpan="2" style="padding:20px 0">
+                      Stripe verifies your account by depositing two small amounts into your bank account. Enter these two deposits into the text boxes below, and click on the
+                      <b>
+                        Verify
+                      </b>
+                      button.
+                    </td>
+                  </tr>
+                  <tr class="deposits">
+                    <td>
+                      First Deposit:
+                    </td>
+                    <td>
+                      <input type="text" id="input_1_depositA" name="q1_bankAccount[depositA]" class="form-textbox validate[required] depositA" autoComplete="off" size="20" value="" data-component="depositA" />
+                    </td>
+                  </tr>
+                  <tr class="deposits deposit-b">
+                    <td>
+                      Second Deposit:
+                    </td>
+                    <td>
+                      <input type="text" id="input_1_depositB" name="q1_bankAccount[depositB]" class="form-textbox validate[required] depositB" autoComplete="off" size="20" value="" data-component="depositB" />
+                    </td>
+                  </tr>
+                  <tr class="verifyButtonTr">
+                    <td>
+                      <button type="button" class="verifyButton">
+                        Verify
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="form-address-table payment-form-table" style="border:0" cellPadding="0" cellSpacing="0">
+                <tbody>
+                  <tr>
+                    <td>
+                      <span class="form-sub-label-container" style="vertical-align:top">
+                        <input type="email" id="input_1_cc_email" name="q1_bankAccount[cc_email]" class="form-textbox validate[required] cc_email" size="20" value="" data-component="cc_email" />
+                        <label class="form-sub-label" for="input_1_cc_email" id="sublabel_cc_email" style="min-height:13px;margin:0 0 3px 0" aria-hidden="false"> Email Address </label>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th colSpan="2" style="text-align:left" id="ecTitle1">
+                      Bank Account
+                    </th>
+                  </tr>
+                  <tr>
+                    <td width="50%">
+                      <span class="form-sub-label-container" style="vertical-align:top">
+                        <input type="number" id="input_1_ec_routingNumber" name="q1_bankAccount[ec_routingNumber]" class="form-textbox validate[required] ec_routingNumber" autoComplete="off" size="20" value="" data-component="ec_routingNumber" />
+                        <label class="form-sub-label" for="input_1_ec_routingNumber" id="sublabel_ec_routingNumber" style="min-height:13px;margin:0 0 3px 0" aria-hidden="false"> Routing Number </label>
+                      </span>
+                    </td>
+                    <td width="50%">
+                      <span class="form-sub-label-container" style="vertical-align:top">
+                        <input type="number" id="input_1_ec_accountNumber" name="q1_bankAccount[ec_accountNumber]" class="form-textbox validate[required] ec_accountNumber" autoComplete="off" size="20" value="" data-component="ec_accountNumber" />
+                        <label class="form-sub-label" for="input_1_ec_accountNumber" id="sublabel_ec_accountNumber" style="min-height:13px;margin:0 0 3px 0" aria-hidden="false"> Account Number </label>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="50%">
+                      <span class="form-sub-label-container" style="vertical-align:top">
+                        <input type="text" id="input_1_ec_nameOnAccount" name="q1_bankAccount[ec_nameOnAccount]" class="form-textbox validate[required] ec_nameOnAccount" autoComplete="off" size="20" value="" data-component="ec_nameOnAccount" />
+                        <label class="form-sub-label" for="input_1_ec_nameOnAccount" id="sublabel_ec_nameOnAccount" style="min-height:13px;margin:0 0 3px 0" aria-hidden="false"> Name on Account </label>
+                      </span>
+                    </td>
+                    <td width="50%">
+                      <span class="form-sub-label-container" style="vertical-align:top">
+                        <select class="form-dropdown validate[required] ec_bankAccountType" name="q1_bankAccount[ec_bankAccountType]" id="input_1_ec_bankAccountType" data-component="ec_bankAccountType">
+                          <option>  </option>
+                          <option value="Individual"> Individual </option>
+                          <option value="Company"> Company </option>
+                        </select>
+                        <label class="form-sub-label" for="input_1_ec_bankAccountType" id="sublabel_ec_bankAccountType" style="min-height:13px;margin:0 0 3px 0" aria-hidden="false"> Type of Account </label>
+                      </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_button" id="id_3">
+        <div id="cid_3" class="form-input-wide">
+          <div style="margin-left:156px" data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField">
+            <button id="input_3" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">
+              Submit
+            </button>
+          </div>
+        </div>
+      </li>
+      <li style="display:none">
+        Should be Empty:
+        <input type="text" name="website" value="" />
+      </li>
+    </ul>
+  </div>
+  <script>
+  JotForm.showJotFormPowered = "0";
+  </script>
+  <script>
+  JotForm.poweredByText = "Powered by JotForm";
+  </script>
+  <input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="210017703756046" />
+  <script type="text/javascript">
+  var all_spc = document.querySelectorAll("form[id='210017703756046'] .si" + "mple" + "_spc");
+for (var i = 0; i < all_spc.length; i++)
+{
+  all_spc[i].value = "210017703756046-210017703756046";
+}
+  </script>
+  <input type="hidden" id="input_4" name="q4_invoiceId" class="form-textbox form-hidden" value="# INV-2YAR21" data-component="autoincrement" />
+</form></div></section>
+{% endblock content %}

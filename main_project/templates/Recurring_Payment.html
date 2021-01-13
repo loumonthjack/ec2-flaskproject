@@ -1,0 +1,370 @@
+{% extends "Layout.html" %}
+{% block content %}
+<section id="home" >
+  <div class="home-content"> 
+            
+  <h1 class="intro-header">{{ title }}</h1>           
+      <p align="center">
+        <code>
+          {{ legend }} User: {{ current_user.email_address }}</code>
+      </p>
+    
+<form class="jotform-form" action="https://submit.jotform.com/submit/210024811331033/" method="post" name="form_210024811331033" id="210024811331033" accept-charset="utf-8" autocomplete="on">
+  <input type="hidden" name="formID" value="210024811331033" />
+  <input type="hidden" id="JWTContainer" value="" />
+  <input type="hidden" id="cardinalOrderNumber" value="" />
+  <div role="main" class="form-all">
+    
+    <ul class="form-section page-section">
+      <li class="form-line" data-type="control_fullname" id="id_8">
+        <label class="form-label form-label-right form-label-auto" id="label_8" for="first_8"> Name </label>
+        <div id="cid_8" class="form-input" data-layout="full">
+          <div data-wrapper-react="true">
+            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first">
+              <input type="text" id="first_8" name="q8_name[first]" class="form-textbox" size="10" value="" data-component="first" aria-labelledby="label_8 sublabel_8_first" />
+              <label class="form-sub-label" for="first_8" id="sublabel_8_first" style="min-height:13px" aria-hidden="false"> First Name </label>
+            </span>
+            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="last">
+              <input type="text" id="last_8" name="q8_name[last]" class="form-textbox" size="15" value="" data-component="last" aria-labelledby="label_8 sublabel_8_last" />
+              <label class="form-sub-label" for="last_8" id="sublabel_8_last" style="min-height:13px" aria-hidden="false"> Last Name </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_email" id="id_9">
+        <label class="form-label form-label-right form-label-auto" id="label_9" for="input_9"> Email </label>
+        <div id="cid_9" class="form-input" data-layout="half">
+          <span class="form-sub-label-container" style="vertical-align:top">
+            <input type="email" id="input_9" name="q9_email" class="form-textbox validate[Email]" style="width:310px" size="310" value="" data-component="email" aria-labelledby="label_9 sublabel_input_9" />
+            <label class="form-sub-label" for="input_9" id="sublabel_input_9" style="min-height:13px" aria-hidden="false"> example@example.com </label>
+          </span>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_address" id="id_10">
+        <label class="form-label form-label-right form-label-auto" id="label_10" for="input_10_addr_line1"> Address </label>
+        <div id="cid_10" class="form-input" data-layout="full">
+          <div summary="" class="form-address-table jsTest-addressField">
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+              <span class="form-address-line form-address-street-line jsTest-address-lineField">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_10_addr_line1" name="q10_address[addr_line1]" class="form-textbox form-address-line" value="" data-component="address_line_1" aria-labelledby="label_10 sublabel_10_addr_line1" required="" />
+                  <label class="form-sub-label" for="input_10_addr_line1" id="sublabel_10_addr_line1" style="min-height:13px" aria-hidden="false"> Street Address </label>
+                </span>
+              </span>
+            </div>
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+              <span class="form-address-line form-address-street-line jsTest-address-lineField">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_10_addr_line2" name="q10_address[addr_line2]" class="form-textbox form-address-line" value="" data-component="address_line_2" aria-labelledby="label_10 sublabel_10_addr_line2" />
+                  <label class="form-sub-label" for="input_10_addr_line2" id="sublabel_10_addr_line2" style="min-height:13px" aria-hidden="false"> Street Address Line 2 </label>
+                </span>
+              </span>
+            </div>
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+              <span class="form-address-line form-address-city-line jsTest-address-lineField ">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_10_city" name="q10_address[city]" class="form-textbox form-address-city" value="" data-component="city" aria-labelledby="label_10 sublabel_10_city" required="" />
+                  <label class="form-sub-label" for="input_10_city" id="sublabel_10_city" style="min-height:13px" aria-hidden="false"> City </label>
+                </span>
+              </span>
+              <span class="form-address-line form-address-state-line jsTest-address-lineField ">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_10_state" name="q10_address[state]" class="form-textbox form-address-state" value="" data-component="state" aria-labelledby="label_10 sublabel_10_state" required="" />
+                  <label class="form-sub-label" for="input_10_state" id="sublabel_10_state" style="min-height:13px" aria-hidden="false"> State / Province </label>
+                </span>
+              </span>
+            </div>
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+              <span class="form-address-line form-address-zip-line jsTest-address-lineField ">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_10_postal" name="q10_address[postal]" class="form-textbox form-address-postal" value="" data-component="zip" aria-labelledby="label_10 sublabel_10_postal" required="" />
+                  <label class="form-sub-label" for="input_10_postal" id="sublabel_10_postal" style="min-height:13px" aria-hidden="false"> Postal / Zip Code </label>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_stripeACHManual" id="id_4" data-payment="true">
+        <label class="form-label form-label-top" id="label_4" for="input_4">
+          Automatic Recurring Payments
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_4" class="form-input-wide jf-required" data-layout="full">
+          <div data-wrapper-react="true">
+            <div data-wrapper-react="true">
+              <div class="filter-container">
+              </div>
+              <input type="hidden" name="simple_fpc" data-payment_type="stripeACHManual" data-component="payment1" value="4" />
+              <input type="hidden" name="payment_total_checksum" id="payment_total_checksum" data-component="payment2" />
+              <div id="image-overlay" class="overlay-content" style="display:none">
+                <img id="current-image" />
+                <span class="lb-prev-button">
+                  prev
+                </span>
+                <span class="lb-next-button">
+                  next
+                </span>
+                <span class="lb-close-button">
+                  ( X )
+                </span>
+                <span class="image-overlay-product-container">
+                  <ul class="form-overlay-item" hasicon="false" hasimages="false" iconvalue="">
+                  </ul>
+                </span>
+              </div>
+              <div data-wrapper-react="true">
+                <span class="form-product-item hover-product-item  full_img new_ui" categories="non-categorized" pid="1000">
+                  <div data-wrapper-react="true" class="form-product-item-detail new_ui">
+                    <div class="p_col">
+                      <div class="p_checkbox">
+                        <input type="radio" class="form-radio validate[required]  form-product-input" id="input_4_1000" name="q4_automaticRecurring[][id]" value="1000" checked="" />
+                        <div class="checked">
+                        </div>
+                        <div class="select_border">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p_image">
+                      <div class="image_area null" style="background-image:url(&quot;null&quot;)">
+                        <div class="image_zoom">
+                        </div>
+                      </div>
+                    </div>
+                    <div for="input_4_1000" class="form-product-container">
+                      <span data-wrapper-react="true">
+                        <div class="title_description">
+                          <span class="form-product-name" id="product-name-input_4_1000">
+                            Housing Payment - Monthly
+                          </span>
+                          <span class="form-product-description" id="product-name-description-input_4_1000">
+                          </span>
+                        </div>
+                        <span class="form-product-details">
+                          <span data-wrapper-react="true">
+                            <b>
+                              <span data-wrapper-react="true">
+                                $
+                                <span id="input_4_1000_price">
+                                  3,400.00
+                                </span>
+                              </span>
+                            </b>
+                            <span data-wrapper-react="true">
+                              for each
+                              <u>
+                                month
+                              </u>
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </span>
+                <div class="payment_footer new_ui ">
+                  <div class="total_area">
+                  </div>
+                </div>
+              </div>
+              <hr/>
+            </div>
+            <div>
+              <table class="form-address-table payment-form-deposits-table" style="border:0;display:none" cellPadding="0" cellSpacing="0">
+                <tbody>
+                  <tr>
+                    <th colSpan="2">
+                      Verify Your Account
+                    </th>
+                  </tr>
+                  <tr>
+                    <td colSpan="2" style="padding:20px 0">
+                      Stripe verifies your account by depositing two small amounts into your bank account. Enter these two deposits into the text boxes below, and click on the
+                      <b>
+                        Verify
+                      </b>
+                      button.
+                    </td>
+                  </tr>
+                  <tr class="deposits">
+                    <td>
+                      First Deposit:
+                    </td>
+                    <td>
+                      <input type="text" id="input_4_depositA" name="q4_automaticRecurring[depositA]" class="form-textbox validate[required] depositA" autoComplete="off" size="20" value="" data-component="depositA" />
+                    </td>
+                  </tr>
+                  <tr class="deposits deposit-b">
+                    <td>
+                      Second Deposit:
+                    </td>
+                    <td>
+                      <input type="text" id="input_4_depositB" name="q4_automaticRecurring[depositB]" class="form-textbox validate[required] depositB" autoComplete="off" size="20" value="" data-component="depositB" />
+                    </td>
+                  </tr>
+                  <tr class="verifyButtonTr">
+                    <td>
+                      <button type="button" class="verifyButton">
+                        Verify
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="form-address-table payment-form-table" style="border:0" cellPadding="0" cellSpacing="0">
+                <tbody>
+                  <tr>
+                    <td>
+                      <span class="form-sub-label-container" style="vertical-align:top">
+                        <input type="email" id="input_4_cc_email" name="q4_automaticRecurring[cc_email]" class="form-textbox validate[required] cc_email" size="20" value="" data-component="cc_email" />
+                        <label class="form-sub-label" for="input_4_cc_email" id="sublabel_cc_email" style="min-height:13px;margin:0 0 3px 0" aria-hidden="false"> Email Address </label>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th colSpan="2" style="text-align:left" id="ecTitle4">
+                      Bank Account
+                    </th>
+                  </tr>
+                  <tr>
+                    <td width="50%">
+                      <span class="form-sub-label-container" style="vertical-align:top">
+                        <input type="number" id="input_4_ec_routingNumber" name="q4_automaticRecurring[ec_routingNumber]" class="form-textbox validate[required] ec_routingNumber" autoComplete="off" size="20" value="" data-component="ec_routingNumber" />
+                        <label class="form-sub-label" for="input_4_ec_routingNumber" id="sublabel_ec_routingNumber" style="min-height:13px;margin:0 0 3px 0" aria-hidden="false"> Routing Number </label>
+                      </span>
+                    </td>
+                    <td width="50%">
+                      <span class="form-sub-label-container" style="vertical-align:top">
+                        <input type="number" id="input_4_ec_accountNumber" name="q4_automaticRecurring[ec_accountNumber]" class="form-textbox validate[required] ec_accountNumber" autoComplete="off" size="20" value="" data-component="ec_accountNumber" />
+                        <label class="form-sub-label" for="input_4_ec_accountNumber" id="sublabel_ec_accountNumber" style="min-height:13px;margin:0 0 3px 0" aria-hidden="false"> Account Number </label>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="50%">
+                      <span class="form-sub-label-container" style="vertical-align:top">
+                        <input type="text" id="input_4_ec_nameOnAccount" name="q4_automaticRecurring[ec_nameOnAccount]" class="form-textbox validate[required] ec_nameOnAccount" autoComplete="off" size="20" value="" data-component="ec_nameOnAccount" />
+                        <label class="form-sub-label" for="input_4_ec_nameOnAccount" id="sublabel_ec_nameOnAccount" style="min-height:13px;margin:0 0 3px 0" aria-hidden="false"> Name on Account </label>
+                      </span>
+                    </td>
+                    <td width="50%">
+                      <span class="form-sub-label-container" style="vertical-align:top">
+                        <select class="form-dropdown validate[required] ec_bankAccountType" name="q4_automaticRecurring[ec_bankAccountType]" id="input_4_ec_bankAccountType" data-component="ec_bankAccountType">
+                          <option>  </option>
+                          <option value="Individual"> Individual </option>
+                          <option value="Company"> Company </option>
+                        </select>
+                        <label class="form-sub-label" for="input_4_ec_bankAccountType" id="sublabel_ec_bankAccountType" style="min-height:13px;margin:0 0 3px 0" aria-hidden="false"> Type of Account </label>
+                      </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_datetime" id="id_6">
+        <label class="form-label form-label-right form-label-auto" id="label_6" for="lite_mode_6">
+          Date
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_6" class="form-input jf-required" data-layout="half">
+          <div data-wrapper-react="true">
+            <div style="display:none">
+              <span class="form-sub-label-container" style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[required, disallowPast, limitDate]" id="month_6" name="q6_date[month]" size="2" data-maxlength="2" data-age="" maxLength="2" value="01" required="" autoComplete="off" aria-labelledby="label_6 sublabel_6_month" />
+                <span class="date-separate" aria-hidden="true">
+                   -
+                </span>
+                <label class="form-sub-label" for="month_6" id="sublabel_6_month" style="min-height:13px" aria-hidden="false"> Month </label>
+              </span>
+              <span class="form-sub-label-container" style="vertical-align:top">
+                <input type="tel" class="currentDate form-textbox validate[required, disallowPast, limitDate]" id="day_6" name="q6_date[day]" size="2" data-maxlength="2" data-age="" maxLength="2" value="07" required="" autoComplete="off" aria-labelledby="label_6 sublabel_6_day" />
+                <span class="date-separate" aria-hidden="true">
+                   -
+                </span>
+                <label class="form-sub-label" for="day_6" id="sublabel_6_day" style="min-height:13px" aria-hidden="false"> Day </label>
+              </span>
+              <span class="form-sub-label-container" style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[required, disallowPast, limitDate]" id="year_6" name="q6_date[year]" size="4" data-maxlength="4" data-age="" maxLength="4" value="2021" required="" autoComplete="off" aria-labelledby="label_6 sublabel_6_year" />
+                <label class="form-sub-label" for="year_6" id="sublabel_6_year" style="min-height:13px" aria-hidden="false"> Year </label>
+              </span>
+            </div>
+            <span class="form-sub-label-container" style="vertical-align:top">
+              <input type="text" class="form-textbox validate[required, disallowPast, limitDate, validateLiteDate]" id="lite_mode_6" size="12" data-maxlength="12" maxLength="12" data-age="" value="01-07-2021" required="" data-format="mmddyyyy" data-seperator="-" placeholder="MM-DD-YYYY" autoComplete="off" aria-labelledby="label_6 sublabel_6_litemode" />
+              <img class=" newDefaultTheme-dateIcon icon-liteMode" alt="Pick a Date" id="input_6_pick" src="https://cdn.jotfor.ms/images/calendar.png" data-component="datetime" aria-hidden="true" data-allow-time="No" data-version="v2" />
+              <label class="form-sub-label" for="lite_mode_6" id="sublabel_6_litemode" style="min-height:13px" aria-hidden="false"> Start Date </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_widget" id="id_13">
+        <div id="cid_13" class="form-input termsAndConditionsV2 jf-required" data-layout="full">
+          <div data-widget-name="Terms &amp;amp; Conditions" style="width:100%;text-align:Left;overflow-x:auto" data-component="widget-field"><p>I agree to the <a href="{{ url_for('home') }}">Terms & Conditions</a></p>
+            <iframe data-client-id="52948fb29322cd302b00000c" title="Terms &amp;amp; Conditions" frameBorder="0" scrolling="no" allowtransparency="true" allow="geolocation; microphone; camera; autoplay; encrypted-media; fullscreen" data-type="iframe" class="custom-field-frame" id="customFieldFrame_13" src="" style="max-width:580px;border:none;width:100%;height:50px" data-width="580" data-height="50">
+            </iframe>
+            <div class="widget-inputs-wrapper">
+              <input type="hidden" id="input_13" class="form-hidden form-widget widget-required " name="q13_typeA" value="" />
+              <input type="hidden" id="widget_settings_13" class="form-hidden form-widget-settings" value="%5B%7B%22name%22%3A%22termsText%22%2C%22value%22%3A%22I%20agree%20to%20%7Bterms%20%26%20conditions%7D.%22%7D%2C%7B%22name%22%3A%22termsLink%22%2C%22value%22%3A%22www.example.com%22%7D%2C%7B%22name%22%3A%22theme%22%2C%22value%22%3A%22default%22%7D%2C%7B%22name%22%3A%22acceptedText%22%2C%22value%22%3A%22Accepted%22%7D%5D" data-version="2" />
+            </div>
+            
+            <script type="text/javascript">
+            setTimeout(function()
+{
+  var _cFieldFrame = document.getElementById("customFieldFrame_13");
+  if (_cFieldFrame)
+  {
+    _cFieldFrame.onload = function()
+    {
+      if (typeof widgetFrameLoaded !== 'undefined')
+      {
+        widgetFrameLoaded(13, {
+          "formID": 210024811331033
+        })
+      }
+    };
+    _cFieldFrame.src = "//app-widgets.jotform.io/termsConditions/?qid=13&ref=" + encodeURIComponent(window.location.protocol + "//" + window.location.host) + '&ndt=1' + '' + '&injectCSS=' + encodeURIComponent(window.location.search.indexOf("ndt=1") > -1);
+    _cFieldFrame.addClassName("custom-field-frame-rendered");
+  }
+}, 0);
+            </script>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_button" id="id_2">
+        <div id="cid_2" class="form-input-wide" data-layout="full">
+          <div data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField">
+            <button id="input_2" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">
+              Submit
+            </button>
+          </div>
+        </div>
+      </li>
+      <li style="display:none">
+        Should be Empty:
+        <input type="text" name="website" value="" />
+      </li>
+    </ul>
+  </div>
+  <script>
+  JotForm.showJotFormPowered = "0";
+  </script>
+  <script>
+  JotForm.poweredByText = "Powered by JotForm";
+  </script>
+  <input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="210024811331033" />
+  <script type="text/javascript">
+  var all_spc = document.querySelectorAll("form[id='210024811331033'] .si" + "mple" + "_spc");
+for (var i = 0; i < all_spc.length; i++)
+{
+  all_spc[i].value = "210024811331033-210024811331033";
+}
+  </script>
+</form></div></section>
+{% endblock content %}
+
